@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginTop="42dp"
+        android:layout_gravity="right"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:elevation="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/skip_shape"
+        android:textColor="@color/white"
+        android:id="@+id/intro_btn_skip"
+        android:textStyle="bold"
+        android:text="Skip"
+        />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="?attr/actionBarSize" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:alpha="0.12"
+        android:background="@android:color/white" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="75dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/intro_indicator_0"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/indicator_unselected" />
+
+            <ImageView
+                android:id="@+id/intro_indicator_1"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/indicator_unselected" />
+
+            <ImageView
+                android:id="@+id/intro_indicator_2"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/indicator_unselected" />
+            <ImageView
+                android:id="@+id/intro_indicator_3"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/indicator_unselected" />
+            <ImageView
+                android:id="@+id/intro_indicator_4"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/indicator_unselected" />
+
+        </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_shape"
+        android:padding="7dp"
+        android:src="@drawable/ic_keyboard_backspace_black_24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:elevation="6dp"
+        android:id="@+id/back"
+        android:visibility="gone"
+        android:layout_marginBottom="61dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_shape"
+        android:padding="7dp"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:elevation="6dp"
+
+        android:id="@+id/next"
+        android:layout_marginBottom="61dp"/>
+
+
+
+
+        <Button
+            android:background="@drawable/button_shape"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/intro_final_next"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:text="Get Started"
+            android:paddingRight="34dp"
+            android:paddingLeft="34dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/white" />
+
+
+
+
+
+</RelativeLayout>
+</layout>

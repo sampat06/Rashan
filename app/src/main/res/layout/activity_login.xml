@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.LoginActivity">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/side_nav_bar"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:layout_collapseMode="pin"
+        app:title=""
+        app:layout_scrollFlags="scroll|enterAlways" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/login_shape">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/groceries"
+                    android:layout_marginTop="14dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/logo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rashan"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/kaushan_script_regular"
+                    android:textSize="26dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/logo"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login/Signup"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="14dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:textColor="@android:color/darker_gray"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_shape"
+                android:layout_margin="10dp"
+                android:hint="Enter Number"
+                android:padding="8dp"
+                android:inputType="number"
+                android:id="@+id/numer"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingLeft="40dp"
+                    android:background="@drawable/button_shape"
+                    android:text="Login"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:id="@+id/login"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/darker_gray"
+                        android:layout_marginLeft="35dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="or"
+                        android:textColor="@android:color/darker_gray"
+                        android:textStyle="bold"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/darker_gray"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="One Touch Login"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:padding="7dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/greyborder"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/true_caller_login"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardBackgroundColor="#DBDEF7"
+                   >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/call"
+                            android:layout_marginRight="12dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Login with "
+                            android:textColor="#0085fe"
+                            android:textAllCaps="false"/>
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/t"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    
+
+</RelativeLayout>
+</layout>

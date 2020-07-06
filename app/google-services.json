@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "623277898289",
+    "firebase_url": "https://rashan-57820.firebaseio.com",
+    "project_id": "rashan-57820",
+    "storage_bucket": "rashan-57820.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623277898289:android:7b8e4c1c4b953a866ab310",
+        "android_client_info": {
+          "package_name": "com.rashan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623277898289-6stfakr4e9n8m30p2anv8o4l4erk97t2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rashan",
+            "certificate_hash": "e048a04a1dd92f9e560c8e1f122e46d44157c559"
+          }
+        },
+        {
+          "client_id": "623277898289-dvgj6h8hu527m9njaool022sgds6seku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs4veZb2-P6AgyhwPloZKUhcGXkVIQ7NQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623277898289-dvgj6h8hu527m9njaool022sgds6seku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
